@@ -1,0 +1,23 @@
+{
+  "name": "consumertwo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest",
+    "test:pact": "jest ./src/api-pact.spec.js",
+    "posttest:pact": "node publish.pact.js"
+  },
+  "author": "Martin Bischof",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact-node": "^10.2.4",
+    "@pact-foundation/pact": "^9.6.1",
+    "jest": "^25.1.0",
+    "mocha": "^7.0.1"
+  }
+}

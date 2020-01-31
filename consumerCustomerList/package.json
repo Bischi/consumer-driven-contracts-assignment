@@ -1,0 +1,24 @@
+{
+  "name": "customer-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest",
+    "test:pact": "jest ./src/api-pact.spec.js",
+    "posttest:pact": "node publish.pact.js"
+  },
+  "author": "Martin Bischof",
+  "license": "ISC",
+  "dependencies": {
+    "@pact-foundation/pact": "^9.6.1",
+    "jest": "^25.1.0",
+    "mocha": "^7.0.1",
+    "nock": "^11.7.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact-node": "^10.2.4"
+  }
+}

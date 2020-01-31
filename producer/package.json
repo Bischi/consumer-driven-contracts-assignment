@@ -1,0 +1,19 @@
+{
+  "name": "producer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test:pact": "npx jest --testMatch \"**/*.pact.test.js\""
+  },
+  "author": "Martin Bischof",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.6.1",
+    "jest": "^25.1.0"
+  }
+}

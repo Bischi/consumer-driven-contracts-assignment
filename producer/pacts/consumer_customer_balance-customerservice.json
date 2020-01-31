@@ -1,0 +1,56 @@
+{
+  "consumer": {
+    "name": "Consumer Customer Balance"
+  },
+  "provider": {
+    "name": "CustomerService"
+  },
+  "interactions": [
+    {
+      "description": "get all customer balances",
+      "providerState": "customer balances exist",
+      "request": {
+        "method": "GET",
+        "path": "/customers/balances"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "name": "Bernd Peter",
+            "balance": 10000
+          },
+          {
+            "name": "Mike Walters",
+            "balance": 66635
+          }
+        ]
+      },
+      "metadata": null
+    },
+    {
+      "description": "get all customer balances",
+      "providerState": "no customers with balances exist",
+      "request": {
+        "method": "GET",
+        "path": "/customers/balances"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": []
+      },
+      "metadata": null
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

@@ -18,6 +18,6 @@
     "@pact-foundation/pact-node": "^10.2.4",
     "@pact-foundation/pact": "^9.6.1",
     "jest": "^25.1.0",
-    "mocha": "^7.0.1"
+    "mocha": "^10.2.0"
   }
 }
